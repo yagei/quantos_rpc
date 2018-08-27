@@ -40,13 +40,13 @@ def get_trade_detail():
 
 @app.route("/stock/get_index_list", methods=['POST'])
 def get_index_list():
-    df, msg = stock.get_index_list(market=request.form['market'])
+    df = stock.get_index_list(market=request.form['market'])
     return df.to_json(orient='table')
 
 
 @app.route("/stock/get_index_component", methods=['POST'])
 def get_index_component():
-    df, msg = stock.get_index_component(symbol=request.form['symbol'])
+    df = stock.get_index_component(symbol=request.form['symbol'])
     return df.to_json(orient='table')
 
 @app.route("/stock/get_rzrq_info", methods=['POST'])
@@ -56,7 +56,7 @@ def get_rzrq_info():
 
 @app.route("/stock/get_dividend", methods=['POST'])
 def get_dividend():
-    df, msg = stock.get_dividend(symbol=request.form['symbol'])
+    df = stock.get_dividend(symbol=request.form['symbol'])
     return df.to_json(orient='table')
 
 
