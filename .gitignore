@@ -34,7 +34,6 @@ Icon?
 /.cake_task_cache
 
 # IDE
-/.idea
 /.vscode
 /.phalcon
 
