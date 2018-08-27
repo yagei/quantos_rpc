@@ -1,8 +1,10 @@
-#!/usr/local/bin/python3.6
+#!/usr/local/bin/python3.7
 
 from flask import Flask,request
 
-from opendatatools import fx,stock,futures,fund,hsgt,economy,aqi,coin,gaokao,movie,realestate,spot
+from opendatatools import stock
+
+    # ,fx,futures,fund,hsgt,economy,aqi,coin,gaokao,movie,realestate,spot
 
 app = Flask(__name__)
 
@@ -101,10 +103,6 @@ def get_hist_money_flow_market():
 def get_realtime_money_flow_market():
     df, msg = stock.get_realtime_money_flow_market()
     return df.to_json(orient='table')
-
-
-
-
 
 
 if __name__ == "__main__":
