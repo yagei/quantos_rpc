@@ -106,4 +106,4 @@ def get_realtime_money_flow_market():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
