@@ -1,12 +1,12 @@
 #!/usr/local/bin/python3.7
 
-from flask import Flask,request
+from flask import flask,request
 
 from opendatatools import stock
 
     # ,fx,futures,fund,hsgt,economy,aqi,coin,gaokao,movie,realestate,spot
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route("/")
 def hello():
