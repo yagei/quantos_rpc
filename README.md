@@ -1,4 +1,4 @@
-# 该项目为https://www.quantos.org/opendata/ HTTPRPC版本
+# 该项目为https://www.quantos.org/opendata/ 提供HTTP RPC接口
 
 ##### pip3 install flask opendatatools html5lib xlrd tesseract
 
